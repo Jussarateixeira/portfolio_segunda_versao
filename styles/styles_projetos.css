@@ -59,7 +59,7 @@
 .projetos_lista div p {
     color: #f2f1f6; 
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
 }
 
 .projetos_lista div:hover {
