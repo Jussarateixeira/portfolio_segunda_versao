@@ -1,0 +1,52 @@
+/* Estilização da about (Sobre mim)*/
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, .5fr);
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 70px 5% 0;
+}
+.about_img {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-right: 10%;
+    margin-top: 2.5%;
+    opacity: 1;
+}
+.about_perfil {
+    width: 100%;
+    height: auto;
+    max-width: 492px;
+    max-height: 492px;
+    border-radius: 90px;
+    box-shadow: 0 0 3pc rgb(14, 202, 202);
+    border: #0ef 5px solid;
+}
+.about_text {
+    margin-right: 2%;
+}
+
+.about_text h2 {
+    font-size: 60px;
+    letter-spacing: 5px;
+    
+}
+
+.about_text h2 span {
+    color: #0ef;
+}
+
+.about_text p {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 2px;
+    margin-bottom: 4rem;
+    text-align: justify;
+    text-justify: inter-word;
+}

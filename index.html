@@ -4,43 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portifolio_Atualizado</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles_about.css">
+    <link rel="stylesheet" href="styles/styles_projetos.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="projetos.html">Projetos desenvolvidos</a>
-            <a class="cabecalho__menu__link" href="programeio_projetos.html">Programe.IO</a>
-            <a class="cabecalho__menu__link" href="cursos.html">Cursos realizados</a>
-        </nav>
-    </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">
-            <strong  class="titulo-destaque"> Eleve sua empresa</strong>
-           contratando uma profissional de qualidade!
-            </h1>
-            <p class="apresentacao__conteudo__texto"> Olá! Sou Jussara Teixeira. 
-                Quer saber mais sobre meus projetos? É fácil, basta analisar minha página web! 
-                Boa leitura! 
-            </p>
-             <div class="apresentacao_links">
-                <h2 class="apresentacao__links_subtitulos">Acesse minhas redes:</h2> <br>
-                <a  class="apresentacao__links__navegacao" href="https://github.com/Jussarateixeira">
-                    <img src="imagens/github.png">
-                    Github
-                </a> <br>
-                <a  class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/jussara-teixeira-016926178/">
-                    <img src="imagens/linkedin.png">
-                    LinkedIn
-                </a>  
+       <header class="header">
+            <a href="#" class="logo">Portfólio</a>
+            <nav class="navbar" id="MyLinks">
+                <a href="#Home"  class="ativo" >Home</a>
+                <a href="#About" >About</a>
+                <a href="#Projetos" >Projetos</a>
+                <a href="#ProgrameIO" >Programe.IO</a>
+            </nav>
+        </header>
+        <!-- Home -->
+    <section class="home" id="Home">
+            <div class="home_conteudo">
+                <h3>Olá, meu nome é </h3>
+                <h1>Jussara Teixeira</h1>
+                <h4>Quer saber mais sobre meus projetos? É fácil, basta analisar minha página web! 
+                 <span class="text"></span></h4>
+                <div class="img">
+                    <img class="responsiva" src="assets/jussara.jpg" alt="Foto da Jussara programando">
+                </div>
+                    <div class="home_redes_sociais">
+                        <a href="https://www.linkedin.com/in/jussara-teixeira-016926178/"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://instagram.com/_jussara.teixeira_"><i class='bx bxl-instagram' ></i></a>
+                        <a href="https://github.com/Jussarateixeira"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+    <!-- Sobre mim -->
+    </section>
+    <main>
+        <section>
+            <div class="about" id="About">
+                <div class="about_img">
+                    <img src="assets/perfil.jpg" class="about_perfil">
+                </div>
+                <div class="about_text">
+                    <h2>Sobre <span>mim</span></h2>
+                    <p> Natural de Tauá/CE, sou graduada em Tecnologia em Telemática 
+                        pelo Instituto Federal de Educação, Ciência e Tecnologia do Ceará, Campus Tauá. 
+                        Atualmente, estou em processo de especialização em Engenharia de Software. 
+                        Ao longo da minha trajetória acadêmica e profissional, desenvolvi habilidades 
+                        que me caracterizam como uma pessoa proativa, criativa, determinada, assídua e 
+                        responsável. Estou constantemente aprimorando meu conhecimento em novas tecnologias 
+                        e linguagens de programação, buscando oportunidades para aplicar essas 
+                        habilidades e oferecer um serviço de qualidade na área.<br>
+                    </p>
+                </div>
+            </div>
+         <!-- Projetos desenvolvidos -->
+        </section>
+        <section id="Projetos">
+            <!-- <div class="project"> -->
+                <div class="container">
+                    <h1 class="sub_titulo">Meus <span>Projetos</span></h1>
+                    <div class="projetos_lista">
+                        <div>
+                            <h2>Jogo Freeway</h2>
+                            <p> Recriação do clássico jogo Freeway, da era dos videogames dos anos 80.</p> 
+                                <a href="https://github.com/Jussarateixeira/JogoFreeway" >Github</a>
+                                <a href="https://jussarateixeira.github.io/JogoFreeway/" >GitPages</a>
+                        </div>
+                        <div>
+                            <h2> Jogo do Pong</h2>
+                            <p> Recriei o clássico jogo Pong, uma homenagem ao pioneirismo dos jogos eletrônicos.</p>
+                            <a href="https://github.com/Jussarateixeira/JogodoPong" >Github</a>
+                            <a href="https://jussarateixeira.github.io/JogodoPong/" >GitPages</a>
+                        </div>
+                        <div>
+                            <h2> Loja virtual de tênis</h2>
+                            <p>Criação de loja virtual para venda de tênis.</p>
+                            <a href="https://github.com/Jussarateixeira/loja_virtual" >Github</a>
+                            <a href="https://jussarateixeira.github.io/loja_virtual/" >GitPages</a>
+                        </div>
+                        <div>
+                            <h2>Primeira versão do meu portfólio</h2>
+                            <p>Criação de um portfólio utilizando HTML e CSS.</p>
+                            <a href="https://github.com/Jussarateixeira/portfolio" >Github</a>
+                            <a href="https://portfolio-theta-nine-79.vercel.app/" >GitPages</a>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </section>
+         <!-- Projetos - Programe.IO -->
+        <section id="ProgrameIO">
+            <div class="project">
+                <div class="container">
+                    <h1 class="sub_titulo"> Projetos desenvolvidos na <span>Programe.IO</span></h1>
+                    <div class="projetos_lista">
+                        <div>
+                            <h2>Calculadora</h2>
+                            <p> Calculadora que realiza as operações básicas, respeitando a precedência de operadores.</p> 
+                                <a href="https://github.com/Jussarateixeira/calculadora" >Github</a>
+                                <a href="https://jussarateixeira.github.io/calculadora/" >GitPages</a>
+                        </div>
+                        <div>
+                            <h2> Versão atualizada do meu portfólio</h2>
+                            <p> Recriei meu portfólio, utilizando HTML, CSS e JAVASCRIPT.</p>
+                            <a href="https://github.com/Jussarateixeira/portfolio_segunda_versao" >Github</a>
+                            <a href="https://jussarateixeira.github.io/portfolio_segunda_versao/" >GitPages</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <img class="apresentacao__imagem" src="imagens/jussara.jpg" alt="Foto da Jussara programando">
-    </main>
-    <footer class="rodape"><p>Desenvolvido por Jussara Teixeira de Araújo Gonçalves</p></footer>
+        
+        <div class="rodape">
+            <p>Develvido por Jussara Teixeira <i class='bx bx-copyright'></i> 2024</p>
+        </div>
+        <a href="#Home" class="inicio"><i class='bx bx-up-arrow-alt' ></i></a>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="portfolio.js"></script>
 </body>
 </html>

@@ -1,0 +1,264 @@
+
+.sub_titulo {
+    text-align: center;
+    font-size: 60px;
+    padding-top: 0px;
+    padding-bottom: 70px;
+}
+.sub_titulo span {
+    color: #0ef;
+}
+.projetos_lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;  
+}
+.projetos_lista div {
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    /* box-shadow: 0.8px 0.8px 12px #012290f7, 0.8px 0.8px 10px #0053b8f7; */
+    border: #0ef 5px solid;
+}
+.container {
+    padding: 50px;
+    gap: 1.5rem;
+}
+
+
+.projetos_lista div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #0ef;
+    text-align: center;
+}
+
+.projetos_lista div a {
+    text-decoration: none;
+    color: #d9a5ec;
+    font-size: 19px;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    border: 2px solid #cc88e5;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    padding: 8px 10px; /* Adiciona um espaço interno ao redor do texto */
+    transition: background-color 0.3s, color 0.3s; /* Adiciona transição de cor */
+}
+
+.projetos_lista div a:hover {
+    background-color: #cc88e5; /* Altera a cor de fundo ao passar o mouse */
+    color: white; /* Altera a cor do texto ao passar o mouse */
+}
+.projetos_lista div p {
+    color: #f2f1f6; 
+    font-size: 20px;
+    text-align: justify;
+}
+
+.projetos_lista div:hover {
+    transform: translateY(-2px);
+}
+
+.rodape{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: rgb(49, 95, 222);
+    font-weight: 300;
+    margin-top: 0px;
+}
+.inicio{
+    position: fixed;
+    bottom: 2.1rem;
+    left: 1rem;
+    display: flex;
+    /* opacity: 0; */
+    transition: all .4s;
+}
+
+.inicio.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.inicio i{
+    color: rgb(76, 23, 66);
+    background: rgb(31, 204, 103);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+/* Efeitos de animação */
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animate {
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUP {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 700px) {
+    .header{
+        display:block;
+    }
+    .logo {
+        position: relative;
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .logo::after{
+        content: "\a";
+        white-space: pre;
+    }
+    .navbar a {
+        font-size: 25px;
+        font-weight: 200;
+        margin-left: 0px;
+        padding: 10px 10px 0 0;
+    }
+    .navbar a::after{
+        content: "\a";
+        white-space: pre;
+    }
+    
+}
+
+@media (max-width: 700px) and (min-width: 400px) {
+    *{
+        overflow-x: hidden;
+        overflow-y: inherit;
+    }
+    /*navbar*/
+    .header{
+        display:block;
+        
+    }
+    .logo {
+        position: relative;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .logo::after{
+        content: "\a";
+        white-space: pre;
+    }
+    .navbar a {
+        font-size: 15px;
+        font-weight: 200;
+        margin-left: 0px;
+        padding: 10px 10px 0 0;
+    }
+    .navbar a::after{
+        content: "\a";
+        white-space: pre;
+    }
+
+    /*home*/
+    .home{
+        align-items: normal;
+        padding-top: 40%;
+        padding-bottom: 0;
+    }
+    .home-content h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    
+    .home-content h3 {
+        font-size: 30px;
+        font-weight: 300;
+    }
+    
+    .home-content h4 {
+        font-size: 18px;
+        font-weight: 200;
+    }
+    
+    .home-content h4 span {
+        font-size: 18px;
+        font-weight: 200;
+    }
+    .img{
+        max-width: 400px;
+        position: relative;
+        left: -10%;
+        top: 2%;
+        padding-bottom: 30px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    
+    /*about*/
+    .about{
+        padding-bottom: 20px;
+        min-height: auto;
+    }
+    .about-text h2 {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+}
+    
