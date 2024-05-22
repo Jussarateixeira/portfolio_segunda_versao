@@ -43,11 +43,9 @@ body {
     transition: .3s;
     opacity: 0;
     animation: slideUP .5s ease forwards;
-    animation-delay: calc(.2s * var(--i));
 }
 .navbar a:hover {
     color: #0ef;
-    text-decoration: underline;
 }
 /*home*/
 .home {
@@ -55,8 +53,6 @@ body {
     width: 100%;
     justify-content: space-between;
     min-height: 100vh;
-    /* background-color: #00193f; */
-    background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
@@ -84,7 +80,6 @@ body {
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
 }
-
 .home_conteudo h4 {
     font-size: 32px;
     font-weight: 700;
@@ -92,7 +87,6 @@ body {
     animation: slideTop 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
 }
-
 .home_conteudo h4 span {
     color: #0ef;
     font-size: 32px;
@@ -113,7 +107,6 @@ body {
     margin: 30px 15px 30px 0;
     opacity: 0;
     animation: slideTop 1s ease forwards;
-    animation-delay: calc(.2s * var(--i));
 }
 .home_redes_sociais a:hover {
     background: #0ef;
@@ -127,8 +120,8 @@ body {
     bottom: 15%;
     margin-right: 5%;
     padding: 0;
-    background-repeat: no-repeat;
-    background-position: center center;
+    /* background-repeat: no-repeat; */
+    background-position: center;
     background-size: cover;
     position: absolute;
     opacity: 0;
